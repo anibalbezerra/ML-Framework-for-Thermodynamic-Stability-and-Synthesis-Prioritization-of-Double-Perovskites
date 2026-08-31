@@ -2,7 +2,7 @@
 
 ## source ~/envs/tblite312/bin/activate
 
-python run_batch_phonons_analysis.py   --csv /scratch_drive/anibal/DFT_out_of_nothing/DoublePerovskitesScreening/double_perovskites_results.csv  --script ./run_phonon_MATERSIM.py   --outdir ./batch_results   --extra-args --use-mattersim --full-analysis --compute-structural-indicators --tight-relax
+python run_batch_phonons_analysis.py   --csv ../double_perovskites_results.csv  --script ./run_phonon_MATERSIM.py   --outdir ./batch_results   --extra-args --use-mattersim --full-analysis --compute-structural-indicators --tight-relax
 
 
 This folder contains scripts and helpers to perform phonon calculations, numerical stability analysis, thermal-property estimation and structural descriptors for perovskite-like materials. The main entrypoint is `run_phonon_MATERSIM.py` which was refactored to prefer the MatterSim potential (if available) and fall back to CHGNet.
